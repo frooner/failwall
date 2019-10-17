@@ -9,6 +9,20 @@
             "UnauthRoleName": "failwall-vscode-20191017135410-unauthRole",
             "StackName": "failwall-vscode-20191017135410",
             "StackId": "arn:aws:cloudformation:eu-central-1:138504377854:stack/failwall-vscode-20191017135410/edb0a2e0-f0d4-11e9-81d8-0a4de0a8f3d8"
+        },
+        "categories": {
+            "function": {
+                "faillApiResourceCustomMessage": {
+                    "REDIRECTURL": "",
+                    "EMAILSUBJECT": "",
+                    "EMAILMESSAGE": ""
+                }
+            },
+            "auth": {
+                "faillApiResource": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
         }
     }
 }
