@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "faillApiResource",
+    "functionName": "faillApiResourceCustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": "[{\"key\":\"RESOURCENAME\",\"value\":\"resourceName\"}]",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "faillApiResourceCustomMessage",
+    "skipEdit": true,
+    "resourceName": "faillApiResourceCustomMessage"
+}
