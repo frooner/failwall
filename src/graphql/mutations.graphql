@@ -1,0 +1,25 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateFail($input: CreateFailInput!) {
+  createFail(input: $input) {
+    id
+    name
+    description
+    rating
+  }
+}
+mutation UpdateFail($input: UpdateFailInput!) {
+  updateFail(input: $input) {
+    id
+    name
+    description
+    rating
+  }
+}
+mutation DeleteFail($input: DeleteFailInput!) {
+  deleteFail(input: $input) {
+    id
+    name
+    description
+    rating
+  }
+}

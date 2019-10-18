@@ -1,27 +1,18 @@
 {
-    "vscode": {
+    "faildev": {
         "awscloudformation": {
-            "AuthRoleName": "failwall-vscode-20191017135410-authRole",
-            "UnauthRoleArn": "arn:aws:iam::138504377854:role/failwall-vscode-20191017135410-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::138504377854:role/failwall-vscode-20191017135410-authRole",
+            "AuthRoleName": "failwall-faildev-20191017152155-authRole",
+            "UnauthRoleArn": "arn:aws:iam::138504377854:role/failwall-faildev-20191017152155-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::138504377854:role/failwall-faildev-20191017152155-authRole",
             "Region": "eu-central-1",
-            "DeploymentBucketName": "failwall-vscode-20191017135410-deployment",
-            "UnauthRoleName": "failwall-vscode-20191017135410-unauthRole",
-            "StackName": "failwall-vscode-20191017135410",
-            "StackId": "arn:aws:cloudformation:eu-central-1:138504377854:stack/failwall-vscode-20191017135410/edb0a2e0-f0d4-11e9-81d8-0a4de0a8f3d8"
+            "DeploymentBucketName": "failwall-faildev-20191017152155-deployment",
+            "UnauthRoleName": "failwall-faildev-20191017152155-unauthRole",
+            "StackName": "failwall-faildev-20191017152155",
+            "StackId": "arn:aws:cloudformation:eu-central-1:138504377854:stack/failwall-faildev-20191017152155/2f96a360-f0e1-11e9-a927-0647b6afc3d8"
         },
         "categories": {
-            "function": {
-                "faillApiResourceCustomMessage": {
-                    "REDIRECTURL": "",
-                    "EMAILSUBJECT": "",
-                    "EMAILMESSAGE": ""
-                }
-            },
             "auth": {
-                "faillApiResource": {
-                    "hostedUIProviderCreds": "[]"
-                }
+                "failwall837eba2e": {}
             }
         }
     }

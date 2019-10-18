@@ -1,10 +1,10 @@
 {
-    "AppSyncApiName": "failApi",
+    "AppSyncApiName": "failwall",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": "false",
     "AuthCognitoUserPoolId": {
         "Fn::GetAtt": [
-            "authfaillApiResource",
+            "authfailwall837eba2e",
             "Outputs.UserPoolId"
         ]
     }
