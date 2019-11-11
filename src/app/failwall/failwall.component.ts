@@ -1,3 +1,4 @@
+import * as Observable from 'zen-observable';
 import * as subscriptions from '../../graphql/subscriptions';
 
 import { API, graphqlOperation } from 'aws-amplify';
@@ -8,8 +9,6 @@ import { ListFailsQuery } from 'API.Graphql';
 import { createFail } from '../../graphql/mutations'
 import { listFails } from '../../graphql/queries';
 import { onCreateFail } from '../../graphql/subscriptions';
-
-import Observable = require('zen-observable');
 
 @Component({
   selector: 'app-failwall',
