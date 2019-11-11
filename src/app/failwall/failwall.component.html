@@ -1,5 +1,6 @@
 <ul>
   <li *ngFor="let fail of fails">{{fail.name}} - {{fail.description}}</li>
 </ul>
-<form
+<input name="newFail" id="newFail" [(ngModel)]="newFail" >
 <button (click)="createFail()">Create Fail</button>
+

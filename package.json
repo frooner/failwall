@@ -25,7 +25,9 @@
     "@aws-amplify/ui": "^1.1.2",
     "aws-amplify": "^1.2.2",
     "aws-amplify-angular": "^3.1.2",
+    "aws-appsync": "^2.0.2",
     "core-js": "^2.5.4",
+    "graphql-tag": "^2.10.1",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },

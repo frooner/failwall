@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthComponent } from './auth/auth.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FailwallComponent } from './failwall/failwall.component';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { NgModule } from '@angular/core';
     FailwallComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     AmplifyAngularModule

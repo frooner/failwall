@@ -8,44 +8,22 @@ import { AmplifyService } from 'aws-amplify-angular';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'failwall';
 
   constructor(private apiService: APIService, private amplifyService: AmplifyService) {
     this.amplifyService.authStateChange$
-    .subscribe(authState => {
+      .subscribe(authState => {
         this.signedIn = authState.state === 'signedIn';
         if (!authState.user) {
-            this.user = null;
+          this.user = null;
         } else {
-            this.user = authState.user;
-            this.greeting = "Hello " + this.user.username;
+          this.user = authState.user;
         }
-});
+      });
   }
 
-  fails: Array<any>;
   signedIn: boolean;
   user: any;
-  greeting: string;
-  async ngOnInit() {
-    console.log('oninit');
-    this.apiService.ListFails().then((evt) => {
-      this.fails = evt.items;
-    });
-    this.apiService.OnCreateFailListener.subscribe((evt) => {
-      const data = (evt as any).value.data.onCreateFail;
-      this.fails = [...this.fails, data];
-    });
-  }
-
-  createFail() {
-    console.log('createfail');
-    this.apiService.CreateFail({
-        id: 'Angular',
-        name: 'testing',
-        rating: 5
-    });
-  }
 
 }
